@@ -3,6 +3,9 @@ _uoᴉʇdǝɔxƎdᴉꞁᖵ ǝsᴉɐɹ_
 
 The best way to flip an exception out of rage.
 
+![PyPi status](https://img.shields.io/pypi/status/flipexception.svg)
+[![PyPI version](https://badge.fury.io/py/flipexception.svg)](https://badge.fury.io/py/flipexception)
+
 
 ## Installation
 ```bash
