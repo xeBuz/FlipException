@@ -7,7 +7,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-__version__ = 0.2
+__version__ = 0.3
 
 
 def flip_text(message=None):
