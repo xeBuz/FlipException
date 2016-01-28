@@ -7,7 +7,7 @@ The best way to flip an exception out of rage.
 [![PyPI version](https://badge.fury.io/py/flipexception.svg)](https://badge.fury.io/py/flipexception)
 [![Build Status](https://travis-ci.org/xeBuz/FlipException.svg?branch=master)](https://travis-ci.org/xeBuz/FlipException)
 [![Code Climate](https://codeclimate.com/github/xeBuz/FlipException/badges/gpa.svg)](https://codeclimate.com/github/xeBuz/FlipException)
-
+[![Coverage Status](https://coveralls.io/repos/github/xeBuz/FlipException/badge.svg?branch=master)](https://coveralls.io/github/xeBuz/FlipException?branch=master)
 
 ## Installation
 ```bash
