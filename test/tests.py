@@ -1,5 +1,5 @@
 import unittest
-from flipexception import FlipException
+from flipexception import FlipException, ValueError
 
 
 class FlipAllTheThings(unittest.TestCase):
@@ -21,3 +21,11 @@ class FlipAllTheThings(unittest.TestCase):
 
         with self.assertRaises(FlipException):
             raise FlipException()
+
+    def test_valueerror(self):
+        """
+        Testing ValueError
+        """
+        with self.assertRaises(ValueError):
+            raise ValueError
+

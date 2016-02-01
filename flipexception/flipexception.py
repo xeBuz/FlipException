@@ -29,3 +29,13 @@ class FlipException(Exception):
 class ValueError(FlipException, ValueError):
     def __init__(self, message=None):
         super(ValueError, self).__init__(message)
+
+
+class BaseException(FlipException, BaseException):
+    def __init__(self, message=None):
+        super(BaseException, self).__init__(message)
+
+
+class StandardError(FlipException, StandardError):
+    def __init__(self, message=None):
+        super(StandardError, self).__init__(message)
