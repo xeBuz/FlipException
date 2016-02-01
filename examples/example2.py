@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from flipexception import ValueError, FlipException
+from flipexception import FlipException
 
 
 try:
@@ -11,11 +11,12 @@ except Exception, e:
     print str(e)
 
 try:
-    raise ValueError("Error getting value")
-except Exception, e:
+    raise FlipException("Error getting value")
+except FlipException, e:
     print str(e)
 
 try:
-    raise ValueError
-except ValueError, e:
+    raise FlipException
+except FlipException, e:
     print str(e)
+
