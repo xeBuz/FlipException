@@ -8,6 +8,8 @@ The best way to flip an exception out of rage.
 [![Build Status](https://travis-ci.org/xeBuz/FlipException.svg?branch=master)](https://travis-ci.org/xeBuz/FlipException)
 [![Code Climate](https://codeclimate.com/github/xeBuz/FlipException/badges/gpa.svg)](https://codeclimate.com/github/xeBuz/FlipException)
 [![Coverage Status](https://coveralls.io/repos/github/xeBuz/FlipException/badge.svg?branch=master)](https://coveralls.io/github/xeBuz/FlipException?branch=master)
+[![Requirements Status](https://requires.io/github/xeBuz/FlipException/requirements.svg?branch=master)](https://requires.io/github/xeBuz/FlipException/requirements/?branch=master)
+
 
 ## Installation
 ```bash
@@ -42,11 +44,11 @@ except Exception, e:
 # -*- coding: utf-8 -*-
 
 
-from flipexception import FlipException
+from flipexception import ValueError
     
 try:
-    raise FlipException()
-except FlipException, e:
+    raise ValueError
+except ValueError, e:
     print str(e)
 ```
 

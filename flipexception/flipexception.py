@@ -10,23 +10,22 @@ sys.setdefaultencoding("utf-8")
 __version__ = 0.3
 
 
-def flip_text(message=None):
-    if not message:
-        message = "┻━┻"
-    else:
-        message = upsidedown.transform(message)
-
-    return unicode("(╯°□°）╯︵ " + message)
-
-
 class FlipException(Exception):
+
+    @staticmethod
+    def flip_text(message=None):
+        if not message:
+            message = "┻━┻"
+        else:
+            message = upsidedown.transform(message)
+
+        return unicode("(╯°□°）╯︵ " + message)
+
     def __init__(self, message=None):
-        message = flip_text(message)
+        message = self.flip_text(message)
         super(Exception, self).__init__(message)
 
 
-class FlipValueError(ValueError):
+class ValueError(FlipException, ValueError):
     def __init__(self, message=None):
-        message = flip_text(message)
         super(ValueError, self).__init__(message)
-
