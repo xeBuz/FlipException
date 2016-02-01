@@ -44,11 +44,11 @@ except Exception, e:
 # -*- coding: utf-8 -*-
 
 
-from flipexception import ValueError
+from flipexception import FlipException
     
 try:
-    raise ValueError
-except ValueError, e:
+    raise FlipException
+except FlipException, e:
     print str(e)
 ```
 
