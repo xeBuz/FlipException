@@ -1,5 +1,6 @@
 import unittest
-from flipexception import FlipValueError
+from flipexception import FlipException
+
 
 class FlipAllTheThings(unittest.TestCase):
     def setUp(self):
@@ -11,12 +12,12 @@ class FlipAllTheThings(unittest.TestCase):
         """
 
         with self.assertRaises(Exception):
-            raise FlipValueError()
+            raise FlipException()
 
     def test_exception_flip(self):
         """
         Testing Eexception Base
         """
 
-        with self.assertRaises(FlipValueError):
-            raise FlipValueError()
+        with self.assertRaises(FlipException):
+            raise FlipException()
