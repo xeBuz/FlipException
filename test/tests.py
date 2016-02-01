@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
-from flipexception import FlipException, ValueError, BaseException, StandardError
+from flipexception import FlipException
 
 
 class FlipAllTheThings(unittest.TestCase):
@@ -22,18 +25,11 @@ class FlipAllTheThings(unittest.TestCase):
         with self.assertRaises(FlipException):
             raise FlipException()
 
-    def test_valueerror(self):
+    def test_fliptext(self):
         """
-        Testing ValueError
+        Flipped text
         """
-        with self.assertRaises(ValueError):
-            raise ValueError
+        fliped = FlipException.flip_text("lala")
+        expected = unicode('(╯°□°）╯︵ ɐꞁɐꞁ')
 
-    def test_baseexception(self):
-
-        with self.assertRaises(BaseException):
-            raise BaseException
-
-    def test_standarderror(self):
-        with self.assertRaises(StandardError):
-            raise StandardError
+        self.assertEqual(fliped, expected)
