@@ -2,13 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import upsidedown
-import sys
 
-reload(sys)
-sys.setdefaultencoding("utf-8")
-
-__version__ = 0.4
-
+__version__ = 0.5
 
 class FlipException(Exception):
 
@@ -19,7 +14,8 @@ class FlipException(Exception):
         else:
             message = upsidedown.transform(message)
 
-        return unicode("(╯°□°）╯︵ " + message)
+        return str("(╯°□°）╯︵ " + message)
+
 
     def __init__(self, message=None):
         message = self.flip_text(message)

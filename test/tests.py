@@ -11,7 +11,7 @@ class FlipAllTheThings(unittest.TestCase):
 
     def test_exception_base(self):
         """
-        Testing Eexception Base
+        Testing Exception Base
         """
 
         with self.assertRaises(Exception):
@@ -19,7 +19,7 @@ class FlipAllTheThings(unittest.TestCase):
 
     def test_exception_flip(self):
         """
-        Testing Eexception Base
+        Testing Exception Base
         """
 
         with self.assertRaises(FlipException):
@@ -29,7 +29,7 @@ class FlipAllTheThings(unittest.TestCase):
         """
         Flipped text
         """
-        fliped = FlipException.flip_text("lala")
-        expected = unicode('(╯°□°）╯︵ ɐꞁɐꞁ')
+        flipped = FlipException.flip_text("lala")
+        expected = str('(╯°□°）╯︵ ɐꞁɐꞁ')
 
-        self.assertEqual(fliped, expected)
+        self.assertEqual(flipped, expected)
