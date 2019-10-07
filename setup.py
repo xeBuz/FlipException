@@ -22,10 +22,10 @@ setup(
     platforms='any',
     test_suite='nose.collector',
     install_requires=[
-        'upsidedown==0.3',
+        'upsidedown==0.4',
     ],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
