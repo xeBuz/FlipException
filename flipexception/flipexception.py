@@ -4,7 +4,14 @@
 import upsidedown
 import sys
 
-reload(sys)
+try:
+    reload  # Python 2.7
+except NameError:
+    try:
+        from importlib import reload  # Python 3.4+
+    except ImportError:
+        from imp import reload  # Python 3.0 - 3.3
+
 sys.setdefaultencoding("utf-8")
 
 __version__ = 0.5
