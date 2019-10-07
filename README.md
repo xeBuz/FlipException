@@ -1,7 +1,9 @@
 # FlipException
+
 _uoᴉʇdǝɔxƎdᴉꞁᖵ ǝsᴉɐɹ_
 
 The best way to flip an exception out of rage.
+
 
 ![PyPi status](https://img.shields.io/pypi/status/flipexception.svg)
 [![PyPI version](https://badge.fury.io/py/flipexception.svg)](https://badge.fury.io/py/flipexception)
@@ -10,12 +12,11 @@ The best way to flip an exception out of rage.
 [![Coverage Status](https://coveralls.io/repos/github/xeBuz/FlipException/badge.svg?branch=master)](https://coveralls.io/github/xeBuz/FlipException?branch=master)
 [![Requirements Status](https://requires.io/github/xeBuz/FlipException/requirements.svg?branch=master)](https://requires.io/github/xeBuz/FlipException/requirements/?branch=master)
 
-
 ## Installation
+
 ```bash
 pip install flipexception
 ```
-
 
 ## Usage
 
@@ -33,11 +34,9 @@ except Exception, e:
     print str(e)
 ```
 
-```
+```bash
 (╯°□°）╯︵ suǝddɐɥ ƃuᴉɥʇǝɯos 'sdoO
 ```
-
-
 
 ```python
 #!/usr/bin/env python
@@ -45,15 +44,13 @@ except Exception, e:
 
 
 from flipexception import FlipException
-    
+
 try:
     raise FlipException
 except FlipException, e:
     print str(e)
 ```
 
-```
+```bash
 (╯°□°）╯︵ ┻━┻
 ```
-
-
